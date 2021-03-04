@@ -1,16 +1,17 @@
 import React from 'react'
 import {useDispatch, useSelector} from 'react-redux'
+import {increment, decrement} from '../action'
 
 const Counter = () => {
     const count = useSelector(state => (state.count))
     const dispatch = useDispatch()
 
     const addCounter= () => {
-        dispatch({type: "INCREMENT"})
+        dispatch(increment())
     }
 
     const minusCounter = () => {
-        dispatch({type: "DECREMENT"})
+        dispatch(decrement())
     }
     return (
         <div>
