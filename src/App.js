@@ -1,11 +1,12 @@
-import Counter from './components/Counter'
-import './App.css';
+import CounterNavbar from './components/Navbar'
+import Routes from './components/Routes'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter/>
+        <CounterNavbar/>
+        <Routes/>
       </header>
     </div>
   );

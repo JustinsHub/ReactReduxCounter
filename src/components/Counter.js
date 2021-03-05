@@ -3,10 +3,12 @@ import {useDispatch, useSelector} from 'react-redux'
 import {increment, decrement} from '../action'
 
 const Counter = () => {
+    //get state from rootReducer {count:0} as the default and use it on UI
     const count = useSelector(state => (state.count))
     const dispatch = useDispatch()
 
-    const addCounter= () => {
+    //dispatches action functions from action.js
+    const addCounter = () => {
         dispatch(increment())
     }
 
